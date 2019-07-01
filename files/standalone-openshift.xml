@@ -675,8 +675,8 @@
     </socket-binding-group>
 
    <deployments>
-    <deployment name="captcha.war" runtime-name="captcha.war">
-            <fs-exploded path="/svc/was/app/captcha"/>
+    <deployment name="simple.war" runtime-name="simple.war">
+            <fs-exploded path="/app/simple.war"/>
         </deployment>
    </deployments>
 
