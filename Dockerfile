@@ -3,6 +3,7 @@ FROM registry.access.redhat.com/jboss-eap-7/eap72-openshift
 #FROM tomcat7-base:latest
     
 USER root
+RUN mkdir -p /logs/was /logs/app
 
 COPY files/standalone-openshift.xml /opt/eap/standalone/configuration/
 
