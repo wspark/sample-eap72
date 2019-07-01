@@ -1,0 +1,4 @@
+<Context cookies="true" >
+   <!--SessionCookie path="/simple" secure="true" httpOnly="true" domain="localhost"/-->
+   <SessionCookie path="/simple" httpOnly="true"/>
+</Context>
