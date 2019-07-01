@@ -673,4 +673,11 @@
             <remote-destination host="localhost" port="25"/>
         </outbound-socket-binding>
     </socket-binding-group>
+
+   <deployments>
+    <deployment name="captcha.war" runtime-name="captcha.war">
+            <fs-exploded path="/svc/was/app/captcha"/>
+        </deployment>
+   </deployments>
+
 </server>
