@@ -7,8 +7,8 @@ RUN mkdir -p /logs/was /logs/app
 
 COPY files/standalone-openshift.xml /opt/eap/standalone/configuration/
 
-RUN chmod -R 775 /logs/was /logs/app \
-   && chown 185:root /logs/was /logs/app 
+RUN chmod -R 775 /logs /app \
+   && chown 185:root /logs /app -R
 # Allow arbitrary
 USER 185
   
