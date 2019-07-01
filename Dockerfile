@@ -9,6 +9,7 @@ COPY files/standalone-openshift.xml /opt/eap/standalone/configuration/
 
 RUN chmod 777 /logs /app  \
    && chown 185:root /logs /app 
+
 # Allow arbitrary
 USER 185
   
