@@ -3,12 +3,12 @@ FROM registry.access.redhat.com/jboss-eap-7/eap72-openshift
 #FROM tomcat7-base:latest
     
 USER root
-RUN mkdir /logs /app
+RUN mkdir /logs /app /test
 
 COPY files/standalone-openshift.xml /opt/eap/standalone/configuration/
 
-RUN chmod -R 775 /logs /app \
-   && chown -R 185:root /logs /app 
+RUN chmod 777 /logs /app  \
+   && chown 185:root /logs /app 
 # Allow arbitrary
 USER 185
   
