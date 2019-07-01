@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/jboss-eap-7/eap72-openshift
+FROM registry.redhat.io/jboss-eap-7/eap72-openshift
     
 USER root
 RUN mkdir /logs /app /test
