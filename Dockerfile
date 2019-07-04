@@ -5,7 +5,7 @@ RUN mkdir -p /logs /app /test
 
 COPY files/standalone-openshift.xml /opt/eap/standalone/configuration/
 COPY files/modules /opt/eap/modules
-ADD files/simple.war /app/simple.war
+#ADD files/simple.war /app/simple.war
 
 RUN chown 185:root /logs /app /opt/eap/modules -R
 RUN chmod 777 /logs /app /opt/eap/modules -R
