@@ -1,7 +1,7 @@
 FROM registry.redhat.io/jboss-eap-7/eap72-openshift
     
 USER root
-RUN mkdir -p /logs /app/simple.war /test
+RUN mkdir -p /logs /app /test
 
 COPY files/standalone-openshift.xml /opt/eap/standalone/configuration/
 COPY files/modules /opt/eap/modules
