@@ -3,6 +3,8 @@ FROM registry.redhat.io/jboss-eap-7/eap72-openshift
 USER root
 RUN mkdir -p /logs /app /test
 
+ENV DISABLE_EMBEDDED_JMS_BROKER=true
+
 COPY files/standalone-openshift.xml /opt/eap/standalone/configuration/
 COPY files/standalone.conf /opt/eap/bin/
 COPY files/modules /opt/eap/modules
