@@ -4,9 +4,5 @@
    
 <jboss-web> 
  	<context-root>simple</context-root> 
-        <symbolic-linking-enabled>true</symbolic-linking-enabled>
-<!--        <overlay>/svc/was/big</overlay>-->
-<!--       <overlay>/svc/was/app/test</overlay>-->
-	
-    
+        <symbolic-linking-enabled>true</symbolic-linking-enabled>    
 </jboss-web>
