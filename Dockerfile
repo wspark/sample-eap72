@@ -9,7 +9,7 @@ ENV DISABLE_EMBEDDED_JMS_BROKER=true
 COPY files/standalone-openshift.xml /opt/eap/standalone/configuration/
 #COPY files/standalone.conf /opt/eap/bin/
 COPY files/modules /opt/eap/modules
-ADD files/simple.war /opt/eap/standalone/deployment/
+ADD files/simple.war /opt/eap/standalone/deployments/
 
 RUN chown 185:root /logs /app /opt/eap/modules -R
 RUN chmod 777 /logs /app /opt/eap/modules -R
