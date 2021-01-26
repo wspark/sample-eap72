@@ -1,4 +1,4 @@
-FROM registry.redhat.io/jboss-eap-7/eap72-openshift
+FROM registry.redhat.io/jboss-eap-7/eap73-openjdk8-openshift-rhel7:latest
     
 USER root
 RUN mkdir -p /logs /app /test
